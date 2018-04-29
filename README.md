@@ -1,6 +1,7 @@
 # Gin MethodOverride Middleware
 
 ![Go Report Card](https://goreportcard.com/badge/github.com/bu/gin-method-override)
+[![Build Status](https://travis-ci.org/bu/gin-method-override.svg?branch=master)](https://travis-ci.org/bu/gin-method-override)
 
 A [Gin web framework](https://github.com/gin-gonic/gin) middleware for method override by POST form param _method, inspired by [Ruby's same name rack](http://www.rubydoc.info/gems/rack/Rack/MethodOverride)
 
