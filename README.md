@@ -2,7 +2,7 @@
 
 ![Go Report Card](https://goreportcard.com/badge/github.com/bu/gin-method-override)
 
-A Gin web framework middleware for method override by POST form param _method, inspired by Ruby's same name rack
+A [Gin web framework](https://github.com/gin-gonic/gin) middleware for method override by POST form param _method, inspired by [Ruby's same name rack](http://www.rubydoc.info/gems/rack/Rack/MethodOverride)
 
 ## Usage
 
@@ -22,7 +22,7 @@ func main() {
 	r := gin.Default()
 
 	// our middle-ware
-	r.Use(ProcessMethodOverride(r))
+	r.Use(method.ProcessMethodOverride(r))
 
 	// routes
 	r.PUT("/test", func (c *gin.Context) {
