@@ -45,7 +45,7 @@ func main() {
     <meta charset="UTF-8">
 </head>
 <body>
-    <form action="/test">
+    <form action="/test" method="POST"> <!-- form method rewrite only works with POST request -->
         <input type="hidden" name="_method" value="PUT">
         <input type="text" name="testing" value="1">
         <button type="submit">Send</button>
