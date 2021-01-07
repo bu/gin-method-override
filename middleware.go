@@ -37,8 +37,9 @@ func ProcessMethodOverride(r *gin.Engine) gin.HandlerFunc {
 			return
 		}
 
+		// cancel current request
+		c.Abort()
 		// after we rewrite this request, we need pass to gin engine for routing again, otherwise, this rewrite route will fail to 404
 		r.HandleContext(c)
-		return
 	}
 }
